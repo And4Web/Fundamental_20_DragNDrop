@@ -26,18 +26,23 @@ function dragEnd(){
   console.log('drag End.');
 }
 
-function dragOver(){
+function dragOver(e){
+  e.preventDefault();
   console.log('drag Over.');
 }
 
-function dragEnter(){
+function dragEnter(e){
+  e.preventDefault();
   console.log('drag Enter.');
 }
 
 function dragLeave(){
+  
   console.log('drag Leave.');
 }
 
 function dragDrop(){
+  this.className = 'empty';
+  this.append(fill);
   console.log('drag Drop.');
 }

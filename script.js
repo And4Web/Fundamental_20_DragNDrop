@@ -4,27 +4,34 @@ const fill = document.querySelector('.fill');
 fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
 
+for(const empty of empties){
+  empty.addEventListener('dragover', dragOver);
+  empty.addEventListener('dragenter', dragEnter);
+  empty.addEventListener('dragleave', dragLeave);
+  empty.addEventListener('drop', dragDrop);
+}
+
 
 function dragStart(){
-  console.log('dragt Start.');
+  console.log('drag Start.');
 }
 
 function dragEnd(){
-  console.log('dragt End.');
+  console.log('drag End.');
 }
 
 function dragOver(){
-  console.log('dragt Over.');
+  console.log('drag Over.');
 }
 
 function dragEnter(){
-  console.log('dragt Enter.');
+  console.log('drag Enter.');
 }
 
 function dragLeave(){
-  console.log('dragt Leave.');
+  console.log('drag Leave.');
 }
 
 function dragDrop(){
-  console.log('dragt Drop.');
+  console.log('drag Drop.');
 }

@@ -12,10 +12,16 @@ body {
 }
 .empty {
   background-color: white;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   margin: 10px;
   border: 2px solid black;
+}
+.fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
